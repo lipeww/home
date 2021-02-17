@@ -120,7 +120,7 @@ const tabley = () => {
   const [state, setState] = useState({
     name: '',
     data: [],
-    isLoading: false
+    isLoading: false,
   })
 
   return (
@@ -128,7 +128,7 @@ const tabley = () => {
       <FileImport onChange={(e) => {
         setState({isLoading: true})
         const file = e.target.files[0];
-        readExcel(file, setState);
+        readExcel(file, setState)
       }}
       />
       <MaterialTable
